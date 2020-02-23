@@ -5,6 +5,9 @@ import sys
 import codecs
 import std_pkg.utils.common as uc
 
+"""
+get blocks starting from index 'start_idx' with spacing of keysize 'ksize'
+"""
 def get_block_idx(data_in, ksize, start_idx):
     new_blk = []
     num_blocks = len(data_in) // ksize
